@@ -1,8 +1,8 @@
 #
 # Makefile that builds btest and other helper programs for the CS:APP data lab
-# 
+#
 CC = gcc
-CFLAGS = -O -Wall 
+CFLAGS = -O -Wall
 LIBS = -lm
 
 all: btest fshow ishow
@@ -18,9 +18,7 @@ ishow: ishow.c
 
 # Forces a recompile. Used by the driver program. 
 btestexplicit:
-	$(CC) $(CFLAGS) $(LIBS) -o btest bits.c btest.c decl.c tests.c 
+	$(CC) $(CFLAGS) $(LIBS) -o btest bits.c btest.c decl.c tests.c
 
 clean:
-	rm -f *.o btest fshow ishow *~
-
-
+	rm -rf *.o btest fshow ishow
