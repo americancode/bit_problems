@@ -1,1 +1,1 @@
-cosc430Assn3
+Various bit related problems to solve using bitwise operations
